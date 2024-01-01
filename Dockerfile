@@ -21,7 +21,7 @@ ENV LUA_CPATH="/usr/local/openresty/site/lualib/?.so;/usr/local/openresty/lualib
 # nginx环境变量
 ENV NGINX_CONF_PATH=
 # 将本地的sh录入到docker中
-ADD entrypoint.sh /
+ADD ./alpine/entrypoint.sh /
 # 将entrypoint.sh 设置可执行
 RUN chmod +x /entrypoint.sh
 # 工作目录
