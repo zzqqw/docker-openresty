@@ -1,4 +1,4 @@
-name: hand publish Docker
+name: docker-image-push
 
 on:
   workflow_dispatch:
