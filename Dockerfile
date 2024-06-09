@@ -1,6 +1,7 @@
 FROM alpine:3.15
 # 更换镜像源
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && apk update
+# RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && apk update
+RUN apk update
 # 依赖安装
 RUN apk add --no-cache --virtual .build-deps \
         build-base \
