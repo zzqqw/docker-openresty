@@ -1,8 +1,6 @@
 # alpine
 ~~~~
 docker build -f Dockerfile -t  zhiqiangwang/openresty:alpine-1.21.4.2  .
-
-docker build -f Dockerfile.apk -t  zhiqiangwang/openresty:alpine  .
 ~~~~
 
 # luarocks包管理
